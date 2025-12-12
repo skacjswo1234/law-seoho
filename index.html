@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>법무법인 서호</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header id="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo-f.png" alt="법무법인 서호">
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span class="menu-icon">☰</span>
+                <span class="menu-text">MENU</span>
+            </button>
+        </div>
+        
+        <!-- 슬라이드 메뉴 -->
+        <nav class="slide-menu" id="slideMenu">
+            <div class="slide-menu-header">
+                <div class="slide-menu-logo">
+                    <img src="logo.png" alt="법무법인 서호">
+                </div>
+                <button class="close-menu" id="closeMenu">✕</button>
+            </div>
+            <ul class="menu-list">
+                <li><a href="#intro">홈</a></li>
+                <li><a href="#service">서비스</a></li>
+                <li><a href="#cases">승소사례</a></li>
+                <li><a href="#directions">오시는길</a></li>
+                <li><a href="https://law-gps.com/consultation" target="_blank">문의하기</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 메인 섹션들 -->
+    <main>
+        <!-- h-1 섹션 (히어로) -->
+        <section class="hero-section" id="intro">
+            <div class="hero-image pc-image">
+                <img src="images/pc/h-1.png" alt="Hero">
+            </div>
+            <div class="hero-image mob-image">
+                <img src="images/mob/h-1-m.png" alt="Hero">
+            </div>
+            <div class="hero-content">
+                <h1 class="typing-text" id="typingText"></h1>
+                <a href="https://law-gps.com/consultation" target="_blank" class="consult-btn">상담신청</a>
+            </div>
+        </section>
+
+        <!-- h-2 섹션 -->
+        <section class="content-section">
+            <div class="section-image pc-image">
+                <img src="images/pc/h-2.png" alt="Section 2">
+            </div>
+            <div class="section-image mob-image">
+                <img src="images/mob/h-2-m.png" alt="Section 2">
+            </div>
+        </section>
+
+        <!-- h-3 섹션 (승소사례) -->
+        <section class="content-section" id="cases">
+            <div class="section-image pc-image">
+                <img src="images/pc/h-3.png" alt="Section 3">
+            </div>
+            <div class="section-image mob-image">
+                <img src="images/mob/h-3-m.png" alt="Section 3">
+            </div>
+        </section>
+
+        <!-- h-4 섹션 -->
+        <section class="content-section">
+            <div class="section-image pc-image">
+                <img src="images/pc/h-4.png" alt="Section 4">
+            </div>
+            <div class="section-image mob-image">
+                <img src="images/mob/h-4-m.png" alt="Section 4">
+            </div>
+        </section>
+
+        <!-- h-5 섹션 (서비스) -->
+        <section class="content-section" id="service">
+            <div class="section-image pc-image">
+                <img src="images/pc/h-5.png" alt="Section 5">
+            </div>
+            <div class="section-image mob-image">
+                <img src="images/mob/h-5-m.png" alt="Section 5">
+            </div>
+        </section>
+
+        <!-- h-6 섹션 (오시는길) -->
+        <section class="content-section" id="directions">
+            <div class="section-image pc-image">
+                <img src="images/pc/h-6.png" alt="Section 6">
+            </div>
+            <div class="section-image mob-image">
+                <img src="images/mob/h-6-m.png" alt="Section 6">
+            </div>
+        </section>
+
+        <!-- 실시간 상담문의 -->
+        <section class="realtime-inquiry">
+            <h2>실시간 상담문의</h2>
+            <div class="inquiry-list" id="inquiryList">
+                <!-- JavaScript로 동적 생성 -->
+            </div>
+            <div class="inquiry-consult-btn-wrapper">
+                <a href="https://law-gps.com/consultation" target="_blank" class="inquiry-consult-btn">상담신청</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="법무법인 서호">
+                </div>
+                <p><strong>상호</strong> 법무법인 서호 김정현 변호사</p>
+                <p><strong>주소</strong> 서울특별시 용산구 새창로 217, 609 내지 619호<br>(한강로2가 용산토투밸리빌딩)</p>
+                <p><strong>사업자등록번호</strong> 106-86-42791</p>
+                <p><strong>대표전화</strong> 02.3785.0110</p>
+                <p><strong>상담전화</strong> 010.8221.1029</p>
+                <p><strong>이메일</strong> jhkimml1024@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 법무법인 서호. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Top 버튼 -->
+    <button class="top-btn" id="topBtn">↑</button>
+
+    <!-- 전화 버튼 -->
+    <a href="tel:010-8221-1029" class="phone-btn">
+        <span class="phone-icon">📞</span>
+        <span class="phone-number">010-8221-1029</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
